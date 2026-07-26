@@ -1,0 +1,97 @@
+.banner-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Un poco más bajito que el banner de inicio */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/contacto.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.banner-blog h1 {
+    font-size: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.banner-blog p {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Cuadrícula del Blog (Grid) --- */
+.contenedor-blog {
+    width: 85%;
+    max-width: 1200px;
+    margin: 5rem auto;
+    display: grid;
+    /* MAGIA RESPONSIVA: Crea columnas automáticas de mínimo 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem; /* Espacio entre cada tarjeta */
+}
+
+/* --- Estilo de cada Tarjeta --- */
+.tarjeta-post {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-post:hover {
+    transform: translateY(-10px); /* Se eleva un poquito al pasar el mouse */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.imagen-post img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Para que la imagen no se deforme */
+    display: block;
+}
+
+.contenido-post {
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fecha {
+    color: #888;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contenido-post h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contenido-post p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-leer {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(255, 189, 211); /* El rosado de tu marca */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-leer:hover {
+    background-color: rgb(255, 220, 232);
+}
