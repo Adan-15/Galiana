@@ -1,0 +1,158 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    height:50rem;
+    background-size: cover;
+    background-position: center;  
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/nosotros.png");
+}
+.banner h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 65px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.infoEmpresa{
+    display: flex;
+    width: 70%;
+    margin:auto;
+    margin-top: 4rem;
+    align-items: center;
+}
+.img1{
+    display: flex;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.img1 img{
+    width: 25rem;
+}
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: start;
+    margin-top: 4rem;
+}
+.nosotros h2{
+    font-size: 40px;
+    margin-bottom: 2rem;  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+.nosotros p{
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 4.5rem;
+    text-align: left;
+}
+.mision, .vision {
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+}
+.item{
+    margin-bottom:  6rem;
+
+}
+.mision h2, .vision h2 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 3rem;
+}
+.mision .item, .vision .item {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+}
+.text, .text1, .img2, .img3 {
+    display: flex;
+    justify-content: center;
+    width: 50%;   
+}                                                                   
+.text p, .text1 p {
+    font-size: 23px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img2, .img3 {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 3.5rem;
+}
+.img2 img, .img3 img {
+    width: 30rem;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 1700px){
+    .mision, .vision, .infoEmpresa{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .infoEmpresa{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .img1{
+        width: auto;
+    }
+    .img1 img{
+        width: 16rem;
+    }
+    .nosotros{
+        text-align: center;
+        margin:auto;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .nosotros p,.vision p, .mision p{
+        font-size: 1.6rem;
+        margin:0;
+        width: auto;        
+    }
+
+
+    .item{
+        flex-direction: column;
+        margin: auto;
+    }
+    .text{
+        width: auto;
+        padding: 0;
+    }
+    .img2{
+        margin: auto;
+        padding: 0;
+    }
+    .img2 img{
+        margin-top: 2rem;
+        width: 25rem;
+    }
+
+
+    .vision{
+        margin-top: 8rem;
+    }
+    .img3{
+        padding: 0;
+        margin: auto;
+        background-color: antiquewhite;
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+    .text1{
+        margin: auto;
+        width: auto;
+        padding: 0;
+        margin-bottom: 8rem;
+    }
+}

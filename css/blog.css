@@ -1,0 +1,67 @@
+.contenedor{
+    width: 70%;
+    max-width: 1200px;
+    margin: 14rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+}
+
+.tarjeta{
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+}
+
+.text{
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.text p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.boton {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%; 
+    padding: 10px 20px;
+    background-color: rgb(255, 189, 211);
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: rgb(255, 220, 232);
+}
